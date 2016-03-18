@@ -32,10 +32,10 @@ yC84 = 0.004;
 e = 0.1;
 C = 22.1;
 KM = 0.086;
-s = 100; % concentration of galactose outside the cell --> has to be determined !
+s = 0; % concentration of galactose outside the cell --> has to be determined !
 
 
-as = C*s/(s+KM)
+as = C*s/(s+KM);
 w = (kr81*kf81/(kr81+yC81))-kf81;
 d = (kr83*kf83/(kr83+yC83))-kf83;
 b = (kr84*kf84/(kr84+yC84))-kf84;
