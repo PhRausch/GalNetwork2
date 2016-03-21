@@ -2,6 +2,7 @@ function dy = Galnetwork2(t,y)
 % [T,Y]=ode45(@Galnetwork2,[0 1000],ones(4,1))
 % This gal network model is from the paper "A modified galactose network
 % with implication for growth"
+% possible way of plotting for s=0 plotyy(t,y(:,[1,4]),t,y(:,[2,3]))
 t
 %Defining the model parameters
 kf81 = 100;
@@ -32,7 +33,7 @@ yC84 = 0.004;
 e = 0.1;
 C = 22.1;
 KM = 0.086;
-s = 100; % concentration of galactose outside the cell --> has to be determined !
+s = 0; % concentration of galactose outside the cell --> has to be determined !
 
 
 as = C*s/(s+KM);
